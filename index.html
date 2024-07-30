@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overall prevalence for Self-reported health status 2018</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+        header div {
+            color: rgb(17, 17, 125);
+            font-weight: bold;
+        }
+        .chart-container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .bar {
+            fill-opacity: 0.7;
+            stroke: #000;
+            stroke-width: 1;
+        }
+        .axis {
+            font: 10px sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Overall prevalence for Self-reported health status 2018</div>
+    </header>
+    <div class="chart-container">
+        <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bars -->
+            <rect x="50" y="50" width="400" height="30" fill="rgb(17, 17, 125)" class="bar"></rect>
+            <rect x="50" y="100" width="300" height="30" fill="rgb(85, 85, 190)" class="bar"></rect>
+            <rect x="50" y="150" width="500" height="30" fill="rgb(150, 150, 255)" class="bar"></rect>
+            <rect x="50" y="200" width="350" height="30" fill="rgb(128, 128, 128)" class="bar"></rect>
+            
+            <!-- Axis -->
+            <line x1="40" y1="30" x2="560" y2="30" stroke="#000" stroke-width="2"></line>
+            <line x1="40" y1="250" x2="560" y2="250" stroke="#000" stroke-width="2"></line>
+            
+            <!-- Labels -->
+            <text x="15" y="70" text-anchor="end" class="axis">Excellent</text>
+            <text x="15" y="120" text-anchor="end" class="axis">Very Good</text>
+            <text x="15" y="170" text-anchor="end" class="axis">Good</text>
+            <text x="15" y="220" text-anchor="end" class="axis">Fair or Poor</text>
+            
+            <!-- Data Labels -->
+            <text x="460" y="70" text-anchor="start" class="axis">17.1%</text>
+            <text x="360" y="120" text-anchor="start" class="axis">27.7%</text>
+            <text x="570" y="170" text-anchor="start" class="axis">31.9%</text>
+            <text x="370" y="220" text-anchor="start" class="axis">23.2%</text>
+        </svg>
+    </div>
+</body>
+</html>
